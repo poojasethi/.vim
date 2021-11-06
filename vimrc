@@ -1,12 +1,17 @@
 set relativenumber
 set number
 set autoindent
-set conceallevel=2 "Useful for previewing markdown."
+
+" Useful for previewing markdown
+set conceallevel=2
+
+" Use for removing extra whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Set up plug-ins
 call plug#begin()
 Plug 'preservim/nerdtree'
-Plug 'kien/ctrlp.vim' 
+Plug 'kien/ctrlp.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'ycm-core/YouCompleteMe'
