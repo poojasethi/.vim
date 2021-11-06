@@ -1,6 +1,7 @@
 set relativenumber
 set number
 set autoindent
+set conceallevel=2 "Useful for previewing markdown."
 
 " Set up plug-ins
 call plug#begin()
