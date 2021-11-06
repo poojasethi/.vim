@@ -1,2 +1,2 @@
-# .vim
-.vimrc, plugins, and such
+# vimrc
+My .vimrc, plugins, and such.
