@@ -1,3 +1,9 @@
+let mapleader = ","
+set timeoutlen=3000
+set ttimeoutlen=100
+set showcmd
+
+
 set relativenumber
 set number
 set autoindent
@@ -15,6 +21,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'ycm-core/YouCompleteMe'
+Plug 'pgr0ss/vim-github-url'
 call plug#end()
 
 "Below is for NERDTree
