@@ -3,10 +3,14 @@ set timeoutlen=3000
 set ttimeoutlen=100
 set showcmd
 
-
 set relativenumber
 set number
 set autoindent
+
+set t_ZH=[3m
+set t_ZR=[23m
+
+highlight Comment cterm=italic
 
 " Useful for previewing markdown
 set conceallevel=2
