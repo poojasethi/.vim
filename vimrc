@@ -9,7 +9,6 @@ set autoindent
 
 set t_ZH=[3m
 set t_ZR=[23m
-
 highlight Comment cterm=italic
 
 " Useful for previewing markdown
@@ -26,6 +25,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'pgr0ss/vim-github-url'
+Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
 
 "Below is for NERDTree
@@ -59,4 +59,9 @@ let g:ycm_extra_conf_vim_data = [
       \  'g:ycm_python_sys_path'
       \]
 let g:ycm_global_ycm_extra_conf = '~/.vim/global_extra_conf.py'
+
+" Below is for Gutentags
+set statusline+=%{gutentags#statusline()}
+
+
 
