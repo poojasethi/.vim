@@ -61,7 +61,7 @@ let g:ycm_extra_conf_vim_data = [
 let g:ycm_global_ycm_extra_conf = '~/.vim/global_extra_conf.py'
 
 " Below is for Gutentags
-set statusline+=%{gutentags#statusline()}
+" set statusline+=%{gutentags#statusline()}
 
 
 
