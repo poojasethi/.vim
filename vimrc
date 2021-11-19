@@ -37,7 +37,19 @@ nnoremap <C-f> :NERDTreeFind<CR>
 "Below is for CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_custom_ignore = {
+	\ 'dir':  '\v[\/]\.(git|hg|svn)$',
+	\ 'file': '\v\.(exe|so|dll)$',
+	\ }
+let g:ctrlp_user_command = {
+    \ 'types': {
+      \ 1: ['.ctrlp', 'cd %s && git ls-files . -co --exclude-standard'],
+      \ 2: ['.git', 'cd %s && git ls-files . -co --exclude-standard'],
+      \ 3: ['.hg', 'hg --cwd %s locate -I .'],
+      \ },
+    \ 'fallback': 'find %s -type f'
+    \ }
+let g:ctrlp_max_files = 0
 
 "Below is for the onedark theme
 if (has("nvim"))
