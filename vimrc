@@ -50,6 +50,7 @@ let g:ctrlp_user_command = {
     \ 'fallback': 'find %s -type f'
     \ }
 let g:ctrlp_max_files = 0
+let g:ctrlp_match_window = 'results:100'
 
 "Below is for the onedark theme
 if (has("nvim"))
