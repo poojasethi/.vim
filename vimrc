@@ -26,6 +26,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'pgr0ss/vim-github-url'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'psf/black'
+Plug 'fisadev/vim-isort'
 call plug#end()
 
 "Below is for NERDTree
@@ -72,5 +74,11 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/global_extra_conf.py'
 " Below is for Gutentags
 " set statusline+=%{gutentags#statusline()}
 
+" Run black on save
+let g:black_linelength = 120
+autocmd BufWritePre *.py execute ':Black'
 
+" Run isort on save
+let g:vim_isort_map = '<C-i>'
+autocmd BufWritePre *.py execute ':Isort'
 
