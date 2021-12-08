@@ -23,11 +23,11 @@ Plug 'preservim/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'ycm-core/YouCompleteMe'
 Plug 'pgr0ss/vim-github-url'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'psf/black'
 Plug 'fisadev/vim-isort'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 "Below is for NERDTree
