@@ -3,7 +3,6 @@ set timeoutlen=3000
 set ttimeoutlen=100
 set showcmd
 
-set relativenumber
 set number
 set autoindent
 
