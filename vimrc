@@ -38,7 +38,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 "Below is for CtrlP
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_user_command = {
     \ 'types': {
       \ 1: ['.ctrlp', 'cd %s && git ls-files . -co --exclude-standard'],
@@ -82,3 +82,5 @@ autocmd BufWritePre *.py execute ':Black'
 let g:vim_isort_map = '<C-i>'
 autocmd BufWritePre *.py execute ':Isort'
 
+" Run commands for CoC
+source ~/.vim/coc-config.vim
