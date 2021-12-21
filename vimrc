@@ -61,15 +61,6 @@ colorscheme onedark
 "Below is for Python highlighting (from polyglot)
 let g:python_highlight_all = 1
 
-"Below is for YouCompleteMe (YCM)
-let g:ycm_python_interpreter_path = '/usr/bin/python3.8'
-let g:ycm_python_sys_path = ''
-let g:ycm_extra_conf_vim_data = [
-      \  'g:ycm_python_interpreter_path',
-      \  'g:ycm_python_sys_path'
-      \]
-let g:ycm_global_ycm_extra_conf = '~/.vim/global_extra_conf.py'
-
 " Below is for Gutentags
 " set statusline+=%{gutentags#statusline()}
 
