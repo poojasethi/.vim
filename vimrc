@@ -1,8 +1,9 @@
 let mapleader = ","
+
 set timeoutlen=3000
 set ttimeoutlen=1000
 set showcmd
-
+set colorcolumn=88
 set number
 set autoindent
 set t_ZH=[3m
@@ -72,7 +73,7 @@ let g:gh_trace = 1
 " set statusline+=%{gutentags#statusline()}
 
 " Run black on save
-let g:black_linelength = 120
+let g:black_linelength = "88"
 autocmd BufWritePre *.py execute ':Black'
 
 " Run isort on save
