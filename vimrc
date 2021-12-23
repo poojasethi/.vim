@@ -1,11 +1,10 @@
 let mapleader = ","
 set timeoutlen=3000
-set ttimeoutlen=100
+set ttimeoutlen=1000
 set showcmd
 
 set number
 set autoindent
-
 set t_ZH=[3m
 set t_ZR=[23m
 highlight Comment cterm=italic
@@ -22,7 +21,7 @@ Plug 'preservim/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'pgr0ss/vim-github-url'
+Plug 'ruanyl/vim-gh-line'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'psf/black'
 Plug 'fisadev/vim-isort'
@@ -60,6 +59,14 @@ colorscheme onedark
 
 "Below is for Python highlighting (from polyglot)
 let g:python_highlight_all = 1
+
+" Below is for GitHub Lines
+let g:gh_line_map_default = 1
+let g:gh_line_blame_map_default = 1
+
+" let g:gh_line_map = 'gl'
+" let g:gh_line_blame_map = 'gb'
+let g:gh_trace = 1
 
 " Below is for Gutentags
 " set statusline+=%{gutentags#statusline()}
