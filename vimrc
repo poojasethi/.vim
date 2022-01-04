@@ -1,4 +1,4 @@
-let mapleader = ","
+let mapleader=","
 
 set timeoutlen=3000
 set ttimeoutlen=1000
@@ -6,6 +6,7 @@ set showcmd
 set colorcolumn=120
 set number
 set autoindent
+set spell spelllang=en_us
 set t_ZH=[3m
 set t_ZR=[23m
 highlight Comment cterm=italic
@@ -67,7 +68,7 @@ let g:gh_line_blame_map_default = 1
 
 " let g:gh_line_map = 'gl'
 " let g:gh_line_blame_map = 'gb'
-let g:gh_trace = 1
+" let g:gh_trace = 1
 
 " Below is for Gutentags
 " set statusline+=%{gutentags#statusline()}
