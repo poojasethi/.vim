@@ -12,8 +12,8 @@ set t_ZR=[23m
 highlight Comment cterm=italic
 
 " Always show status line with file path.
+set statusline=%F
 set laststatus=2
-set statusline+=%F
 
 " Useful for previewing markdown
 set conceallevel=2
