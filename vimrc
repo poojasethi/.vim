@@ -77,13 +77,13 @@ let g:gh_line_blame_map_default = 1
 " Below is for Gutentags
 " set statusline+=%{gutentags#statusline()}
 
-" Run black on save
-let g:black_linelength = "120"
-autocmd BufWritePre *.py execute ':Black'
-
 " Run isort on save
 let g:vim_isort_map = '<C-i>'
 autocmd BufWritePre *.py execute ':Isort'
+
+" Run black on save
+let g:black_linelength = "120"
+autocmd BufWritePre *.py execute ':Black'
 
 " Run commands for CoC
 source ~/.vim/coc-config.vim
