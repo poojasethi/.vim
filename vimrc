@@ -1,7 +1,7 @@
 let mapleader=","
 
-set timeoutlen=3000
-set ttimeoutlen=1000
+set timeoutlen=200
+set ttimeoutlen=50
 set showcmd
 set colorcolumn=120
 set number
@@ -32,6 +32,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'psf/black'
 Plug 'fisadev/vim-isort'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'untitled-ai/jupyter_ascending.vim'
 call plug#end()
 
 "Below is for NERDTree
